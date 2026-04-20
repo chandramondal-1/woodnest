@@ -91,7 +91,7 @@ export default function HomePage() {
       </section>
 
       {/* 3. Why WOODNEST (Luxury Values) */}
-      <section className="market-section bg-white border-y border-border-light-gray">
+      <section className="market-section bg-bg-soft-white/60 border-y border-border-muted">
          <div className="grid md:grid-cols-4 gap-16 text-center">
             {[
                { title: "Premium Material", icon: "🪵", desc: "Hand-selected kiln-dried hardwoods and artisanal fabrics." },

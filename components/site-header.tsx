@@ -58,7 +58,7 @@ export function SiteHeader() {
 
         {/* Search - Refined Minimalism */}
         <div ref={searchRef} className="relative hidden flex-1 max-w-[420px] md:block mx-12">
-          <div className="flex h-12 w-full items-center bg-white rounded-xl px-5 border border-border-light-gray focus-within:border-accent-terracotta/40 transition-all shadow-sm">
+          <div className="flex h-12 w-full items-center bg-bg-soft-white rounded-xl px-5 border border-border-muted focus-within:border-accent-terracotta/40 transition-all shadow-sm">
              <svg className="text-text-dark-gray mr-3" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
              <input 
                type="text" 
@@ -71,7 +71,7 @@ export function SiteHeader() {
           </div>
 
           {showSuggestions && searchQuery.length > 0 && (
-             <div className="absolute top-[calc(100%+8px)] left-0 w-full bg-white rounded-2xl shadow-2xl border border-border-light-gray p-2 ani-page-reveal">
+             <div className="absolute top-[calc(100%+8px)] left-0 w-full bg-bg-soft-white rounded-2xl shadow-2xl border border-border-muted p-2 ani-page-reveal">
                 {suggestions.map(p => (
                   <Link key={p.slug} href={`/product/${p.slug}`} className="flex items-center gap-4 p-3 rounded-xl hover:bg-bg-soft-white transition" onClick={() => setShowSuggestions(false)}>
                      <div className="h-12 w-12 bg-bg-soft-white rounded-lg p-1">
@@ -101,7 +101,7 @@ export function SiteHeader() {
               <Link href="/cart" className="relative flex items-center gap-2 group">
                  <div className="relative">
                     <svg className="group-hover:text-accent-terracotta transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.1-5.38a.5.5 0 0 0-.49-.6H6"/></svg>
-                    {totalCartItems > 0 && <span className="absolute -top-2 -right-2 bg-text-rich-black text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center border-2 border-white font-black">{totalCartItems}</span>}
+                    {totalCartItems > 0 && <span className="absolute -top-2 -right-2 bg-text-rich-black text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center border-2 border-bg-soft-white font-black">{totalCartItems}</span>}
                  </div>
               </Link>
            </div>
@@ -109,7 +109,7 @@ export function SiteHeader() {
       </div>
 
       {/* Minimal Category Rail */}
-      <div className="bg-white/40 backdrop-blur-sm border-b border-border-light-gray overflow-x-auto scrollbar-hide py-3">
+      <div className="bg-bg-soft-white/40 backdrop-blur-sm border-b border-border-muted overflow-x-auto scrollbar-hide py-3">
          <div className="mx-auto flex w-full max-w-[var(--max-width)] items-center justify-center gap-16 px-6">
             {categories.slice(0, 5).map(cat => (
               <Link key={cat.title} href="/shop" className="text-[10px] font-bold tracking-[0.3em] uppercase text-text-dark-gray/60 hover:text-accent-terracotta transition-all whitespace-nowrap">

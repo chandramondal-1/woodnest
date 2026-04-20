@@ -104,7 +104,7 @@ export default function CheckoutPage() {
 
         {/* ── STEP 1: Guest / Login ── */}
         {step === 1 && (
-          <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-8 space-y-8 ani-reveal">
+          <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-8 space-y-8 ani-reveal">
             <div>
               <h2 className="font-serif text-2xl font-bold italic text-text-rich-black">Who's ordering?</h2>
               <p className="text-sm text-text-dark-gray/60 font-medium mt-1">No account needed. We never force sign-up.</p>
@@ -150,7 +150,7 @@ export default function CheckoutPage() {
 
         {/* ── STEP 2: Address ── */}
         {step === 2 && (
-          <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-8 space-y-8 ani-reveal">
+          <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-8 space-y-8 ani-reveal">
             <div>
               <h2 className="font-serif text-2xl font-bold italic">Delivery Address</h2>
               <p className="text-sm text-text-dark-gray/60 font-medium mt-1">Pincode auto-fills your city & state.</p>
@@ -235,7 +235,7 @@ export default function CheckoutPage() {
 
         {/* ── STEP 3: Delivery ── */}
         {step === 3 && (
-          <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-8 space-y-8 ani-reveal">
+          <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-8 space-y-8 ani-reveal">
             <h2 className="font-serif text-2xl font-bold italic">Delivery Options</h2>
 
             <div className="space-y-4">
@@ -294,7 +294,7 @@ export default function CheckoutPage() {
 
         {/* ── STEP 4: Payment ── */}
         {step === 4 && (
-          <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-8 space-y-8 ani-reveal">
+          <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-8 space-y-8 ani-reveal">
             <h2 className="font-serif text-2xl font-bold italic">Secure Payment</h2>
 
             <div className="space-y-3">
@@ -350,7 +350,7 @@ export default function CheckoutPage() {
       </section>
 
       {/* ── RIGHT: Order Summary ─────────────────── */}
-      <aside className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-6 space-y-6 sticky top-24">
+      <aside className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-6 space-y-6 sticky top-24">
         <p className="text-xs font-black uppercase tracking-[0.3em] text-text-dark-gray/40">Order Summary ({cartItems.length} items)</p>
 
         <div className="space-y-4 max-h-[300px] overflow-y-auto scrollbar-hide">

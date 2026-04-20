@@ -62,7 +62,7 @@ export default function CartPage() {
           const isLowStock = item.product.stockCount <= 3;
 
           return (
-            <div key={`${item.product.slug}-${idx}`} className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-6 flex gap-6 group hover-shadow">
+            <div key={`${item.product.slug}-${idx}`} className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-6 flex gap-6 group hover-shadow">
               {/* Image */}
               <Link href={`/product/${item.product.slug}`} className="h-32 w-32 flex-shrink-0 bg-bg-soft-white rounded-xl overflow-hidden border border-border-light-gray">
                 <img src={item.product.image} className="h-full w-full object-contain p-2 group-hover:scale-105 transition-transform duration-500" alt={item.product.name} />
@@ -121,7 +121,7 @@ export default function CartPage() {
         })}
 
         {/* Frequently Bought Together */}
-        <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-6 space-y-5">
+        <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-6 space-y-5">
           <p className="text-xs font-black uppercase tracking-[0.3em] text-text-dark-gray/40">Frequently Bought Together</p>
           <div className="grid grid-cols-3 gap-4">
             {upsell.map(p => (
@@ -146,7 +146,7 @@ export default function CartPage() {
       <aside className="space-y-5 sticky top-24">
 
         {/* Coupon Code Box */}
-        <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-6 space-y-5">
+        <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-6 space-y-5">
           <p className="text-xs font-black uppercase tracking-[0.3em] text-text-dark-gray/40">Apply Coupon</p>
 
           {appliedCoupon ? (
@@ -180,7 +180,7 @@ export default function CartPage() {
         </div>
 
         {/* Shipping Estimator */}
-        <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow p-6 space-y-4">
+        <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow p-6 space-y-4">
           <p className="text-xs font-black uppercase tracking-[0.3em] text-text-dark-gray/40">Delivery Availability</p>
           <div className="flex gap-3">
             <input
@@ -204,7 +204,7 @@ export default function CartPage() {
         </div>
 
         {/* Price Breakdown */}
-        <div className="bg-white rounded-[12px] border border-border-light-gray soft-shadow divide-y divide-border-light-gray">
+        <div className="bg-bg-soft-white rounded-[12px] border border-border-muted soft-shadow divide-y divide-border-light-gray">
           <p className="px-6 py-4 text-xs font-black uppercase tracking-[0.3em] text-text-dark-gray/40">Price Details</p>
           <div className="px-6 py-5 space-y-4 text-sm">
             <div className="flex justify-between text-text-dark-gray">

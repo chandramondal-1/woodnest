@@ -45,7 +45,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article 
       ref={tiltRef as any}
-      className={`group relative bg-white rounded-[12px] overflow-hidden soft-shadow hover-shadow ani-page-reveal border border-border-light-gray ${isFlying ? 'ani-fly-to-cart' : ''}`}
+      className={`group relative bg-bg-soft-white rounded-[12px] overflow-hidden soft-shadow hover-shadow ani-page-reveal border border-border-muted ${isFlying ? 'ani-fly-to-cart' : ''}`}
     >
       {/* 1. Shimmering Texture Container */}
       <Link href={`/product/${product.slug}`} className="block relative aspect-square bg-[#fafafa] overflow-hidden ani-shimmer">
