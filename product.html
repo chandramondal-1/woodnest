@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WOODNEST | Product Details</title>
+    <meta
+      name="description"
+      content="View premium WOODNEST sofa product details, pricing, size, and related collection designs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top-strip">
+      <p>Premium product view with direct contact options</p>
+      <div class="top-strip-links">
+        <a href="tel:+919832477151">Call: +91 98324 77151</a>
+        <a href="https://wa.me/919832477151" target="_blank" rel="noreferrer">WhatsApp Support</a>
+      </div>
+    </div>
+
+    <div class="page-shell">
+      <header class="site-header site-header--marketplace">
+        <a class="brand-lockup" href="./index.html">
+          <img class="brand-logo" src="./assets/brand/woodnest-logo.png" alt="WOODNEST logo" />
+          <div>
+            <p class="brand-name">WOODNEST</p>
+            <p class="brand-subtitle">Luxury • Comfort • Modern Living</p>
+          </div>
+        </a>
+
+        <div class="header-search">
+          <span>Dedicated product page with direct WhatsApp and call actions</span>
+        </div>
+
+        <nav class="site-nav">
+          <a href="./index.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./shop.html#collections">Collections</a>
+          <a href="./shop.html#catalog">Catalog</a>
+        </nav>
+
+        <a class="header-cta" href="./shop.html#catalog">Back to Catalog</a>
+      </header>
+
+      <main id="productPageRoot">
+        <section class="detail-hero">
+          <div class="detail-gallery">
+            <div class="detail-image-card">
+              <img id="detailImage" src="" alt="" />
+            </div>
+          </div>
+
+          <div class="detail-copy">
+            <p class="eyebrow" id="detailCategory"></p>
+            <h1 id="detailTitle"></h1>
+            <p class="detail-config" id="detailConfig"></p>
+            <div class="detail-price-row">
+              <strong id="detailPrice"></strong>
+              <span class="detail-badge" id="detailBadge"></span>
+            </div>
+            <p class="detail-description" id="detailDescription"></p>
+
+            <div class="detail-meta-grid">
+              <article>
+                <span>Configuration</span>
+                <strong id="detailMetaConfig"></strong>
+              </article>
+              <article>
+                <span>Category</span>
+                <strong id="detailMetaCategory"></strong>
+              </article>
+              <article>
+                <span>Size</span>
+                <strong id="detailSize"></strong>
+              </article>
+              <article>
+                <span>Brand Promise</span>
+                <strong>Premium showroom finish</strong>
+              </article>
+            </div>
+
+            <div class="detail-actions">
+              <a class="btn btn-primary" id="detailWhatsApp" href="https://wa.me/919832477151" target="_blank" rel="noreferrer">
+                Enquire on WhatsApp
+              </a>
+              <a class="btn btn-consult" id="detailConsultant" href="./consultant.html?source=product-page">
+                Get Consultant
+              </a>
+              <a class="btn btn-secondary" href="tel:+919832477151">Call Now</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-info-grid">
+          <article class="detail-info-card">
+            <p class="eyebrow">Premium Overview</p>
+            <h2>Designed to feel richer in person.</h2>
+            <p id="detailOverviewText"></p>
+          </article>
+          <article class="detail-info-card">
+            <p class="eyebrow">Shopping Confidence</p>
+            <h2>What this inner page helps you show.</h2>
+            <ul class="detail-list">
+              <li>Actual product image on a full dedicated page</li>
+              <li>Model name, category, size, and configuration</li>
+              <li>Premium CTA area for WhatsApp or inquiry flow</li>
+              <li>Related products from the same category</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="related-section">
+          <div class="section-heading">
+            <p class="eyebrow">Related Designs</p>
+            <h2>More products from the same collection.</h2>
+          </div>
+          <div class="product-grid" id="relatedProducts"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="floating-actions">
+      <a class="floating-action floating-action--whatsapp" href="https://wa.me/919832477151" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><span>💬</span></a>
+      <a class="floating-action floating-action--call" href="tel:+919832477151" aria-label="Call now"><span>📞</span></a>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./product-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  /* 8px Spacing Grid */
+  --spacing-unit: 8px;
+  
+  /* 🎨 NEW: Terracotta & Obsidian Palette */
+  --accent-terracotta: #A35D45;
+  --accent-terracotta-dark: #8A4D38;
+  --bg-soft-white: #F5F3F1;
+  --text-rich-black: #111111;
+  --text-dark-gray: #444444;
+  --border-light-gray: #E5E5E5;
+  --white: #ffffff;
+  
+  /* Legacy Mapping for compatibility */
+  --market-blue: var(--accent-terracotta);
+  --market-blue-hover: var(--accent-terracotta-dark);
+  --market-orange: var(--accent-terracotta);
+  --market-yellow: #d4af37;
+  --market-green: #2e7d32;
+  --market-bg: var(--bg-soft-white);
+  --market-text: var(--text-rich-black);
+  
+  /* Layout */
+  --max-width: 1400px;
+  --section-padding: clamp(80px, 12vw, 160px); /* Luxury Spacing */
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0; 
+  min-height: 100vh;
+  background: var(--bg-soft-white);
+  color: var(--text-rich-black);
+  font-family: 'Poppins', sans-serif; /* Body font */
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; /* Heading font */
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+/* 🎯 TYPOGRAPHY HIERARCHY */
+.hero-heading { font-size: clamp(48px, 6vw, 84px); font-weight: 700; font-style: italic; }
+.section-heading { font-size: clamp(36px, 5vw, 48px); font-weight: 700; }
+.body-large { font-size: 18px; line-height: 1.8; }
+.body-small { font-size: 14px; color: var(--text-dark-gray); }
+
+/* 📦 VISUAL LUXURY */
+.soft-shadow {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.hover-shadow {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-shadow:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(163, 93, 69, 0.1); /* Subtle terracotta glow */
+}
+
+.btn-premium {
+  @apply inline-flex items-center justify-center rounded-xl font-bold transition-all active:scale-95 px-10 py-5 text-white shadow-xl;
+  background-color: var(--accent-terracotta);
+  border-radius: 12px;
+}
+.btn-premium:hover {
+  background-color: var(--accent-terracotta-dark);
+  transform: translateY(-2px);
+}
+
+/* 🎬 CINEMATIC ANIMATIONS (Refined for Warmth) */
+@keyframes meshFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.ani-mesh { background: linear-gradient(-45deg, #F5F3F1, #E5E5E5, #ffffff, #F5F3F1); background-size: 400% 400%; animation: meshFlow 20s ease infinite; }
+
+@keyframes heartFill {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); background: var(--accent-terracotta); }
+  100% { transform: scale(1); }
+}
+.ani-heart { animation: heartFill 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+@keyframes logoReveal {
+  from { opacity: 0; filter: blur(10px); transform: translateY(10px); }
+  to { opacity: 1; filter: blur(0); transform: translateY(0); }
+}
+.ani-reveal { animation: logoReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+/* NAVIGATION */
+.nav-sticky {
+  @apply sticky top-0 z-[1000] bg-white/80 backdrop-blur-2xl border-b border-black/[0.03];
+}
+
+/* CUSTOM SCROLLBAR (Minimal Terracotta) */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-soft-white); }
+::-webkit-scrollbar-thumb { background: var(--accent-terracotta); border-radius: 10px; opacity: 0.5; }
+
+/* SPOTLIGHT CURSOR */
+.cursor-spotlight {
+  position: fixed; pointer-events: none; inset: 0; z-index: 9999;
+  background: radial-gradient(circle 200px at var(--x) var(--y), rgba(163, 93, 69, 0.1), transparent 80%);
+}

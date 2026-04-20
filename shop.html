@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WOODNEST | Shop Premium Sofas</title>
+    <meta
+      name="description"
+      content="Browse the full WOODNEST premium sofa catalog by category, search, and detailed product inner pages."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top-strip">
+      <p>WOODNEST online catalog and premium consultation support</p>
+      <div class="top-strip-links">
+        <a href="tel:+919832477151">Call: +91 98324 77151</a>
+        <a href="https://wa.me/919832477151" target="_blank" rel="noreferrer">WhatsApp Support</a>
+      </div>
+    </div>
+
+    <div class="page-shell">
+      <header class="site-header site-header--marketplace">
+        <a class="brand-lockup" href="./index.html">
+          <img class="brand-logo" src="./assets/brand/woodnest-logo.png" alt="WOODNEST logo" />
+          <div>
+            <p class="brand-name">WOODNEST</p>
+            <p class="brand-subtitle">Luxury • Comfort • Modern Living</p>
+          </div>
+        </a>
+
+        <div class="header-search">
+          <span>Shop page with category filters, search, and product detail links</span>
+        </div>
+
+        <nav class="site-nav">
+          <a href="./index.html">Home</a>
+          <a href="./shop.html" class="active">Shop</a>
+          <a href="#collections">Categories</a>
+          <a href="#catalog">Catalog</a>
+        </nav>
+
+        <a class="header-cta" href="#catalog">Browse Catalog</a>
+      </header>
+
+      <main>
+        <section class="shop-hero">
+          <div class="section-heading">
+            <p class="eyebrow">WOODNEST Shop</p>
+            <h1>Marketplace-style sofa browsing with cleaner product discovery.</h1>
+            <p>
+              This is the dedicated shop page. Customers can filter by category, search
+              by model name, and open a separate inner page for each product.
+            </p>
+          </div>
+          <div class="shop-hero-banner">
+            <img src="./assets/products/IMG_1365.PNG" alt="SS Audi L Shape sofa" />
+          </div>
+        </section>
+
+        <section id="collections" class="collections-section">
+          <div class="section-heading">
+            <p class="eyebrow">Collections</p>
+            <h2>Browse by category before viewing the full product grid.</h2>
+          </div>
+          <div class="collection-grid" id="categoryOverview"></div>
+        </section>
+
+        <section id="catalog" class="catalog-section">
+          <div class="catalog-header">
+            <div class="section-heading">
+              <p class="eyebrow">Full Catalog</p>
+              <h2>Search, filter, and open detailed product pages.</h2>
+            </div>
+
+            <div class="catalog-controls">
+              <div class="filter-group" id="categoryFilters"></div>
+              <label class="search-box" for="searchInput">
+                <span>Search model</span>
+                <input id="searchInput" type="search" placeholder="Search sofa name..." />
+              </label>
+            </div>
+          </div>
+
+          <div class="catalog-summary">
+            <p id="resultsCount">Showing all products</p>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="floating-actions">
+      <a class="floating-action floating-action--whatsapp" href="https://wa.me/919832477151" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><span>💬</span></a>
+      <a class="floating-action floating-action--call" href="tel:+919832477151" aria-label="Call now"><span>📞</span></a>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
